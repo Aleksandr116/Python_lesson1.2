@@ -24,7 +24,14 @@
 Пользователь в цикле вводит 10 цифр. Найти количество введеных пользователем цифр 5.
 '''
 
-
+# a=1
+# c=0
+# while a < 11:
+#     b=int(input())
+#     if b == 5:
+#         c = c + 1
+#     a = a + 1
+# print (c)
 
 
 '''
@@ -42,29 +49,31 @@
 Найти произведение ряда чисел от 1 до 10. Полученный результат вывести на экран.
 '''
 
-# mult = 1
+# pr = 1
 #
-# for i in range(1,101):
-#     mult*=i
-# print(mult)
+# for i in range(1,11):
+#     pr*=i
+# print(pr)
 
 '''
 Задача 5
 Вывести цифры числа на каждой строчке.
 '''
-#
-# integer_number = 2129
-#
-# print(integer_number//10,integer_number%10)
-#
-# while integer_number>0:
-#     print(integer_number//10)
-#     integer_number = integer_number%10
+# a = int(input('Введите число: '))
+# while a > 0:
+#     print(a%10)
+#     a = a//10
 
 '''
 Задача 6
 Найти сумму цифр числа.
-'''
+# '''
+# a=int(input('Введите число: '))
+# s = 0
+# for i in str(a):
+#     s = s + int(i)
+# print(s)
+
 
 
 '''
@@ -72,11 +81,20 @@
 Найти произведение цифр числа.
 '''
 
+# a=int(input('Введите число: ')) # число 454
+# # s = 1
+# # for i in str(a):
+# #     s = s * int(i)
+# # print(s)
+
+
+
+
 '''
 Задача 8
 Дать ответ на вопрос: есть ли среди цифр числа 5?
-# '''
-# integer_number = 213413
+# # # '''
+# integer_number = int(input('Введите число: '))
 # while integer_number>0:
 #     if integer_number%10 == 5:
 #         print('Yes')
@@ -89,15 +107,23 @@
 Найти максимальную цифру в числе
 '''
 
+# a=int(input('Введите число: '))
+# for i in max(str(a)):
+#     print(i)
+
+
 
 '''
 Задача 10
 Найти количество цифр 5 в числе
 '''
+#
+# integer_number = int(input('Введите число: '))
+# a = 0
+# while integer_number>0:
+#     if integer_number%10 == 5:
+#         a = a + 1
+#     integer_number = integer_number//10
+# print(a)
 
-i = 1
-while i <= 10:
-    print(i)
-    i += 1
-else:
-    print('Цикл окончен, i =', i)
+
